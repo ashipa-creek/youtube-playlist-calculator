@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Playlist Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>YouTube Playlist Time Calculator</h2>
+
+      <input type="text" id="playlistUrl" placeholder="Paste playlist URL" />
+      <button onclick="calculate()">Calculate</button>
+      <label>Playback Speed:</label>
+      <select id="speed">
+        <option value="1">1x (Normal)</option>
+        <option value="1.25">1.25x</option>
+        <option value="1.5">1.5x</option>
+        <option value="2">2x</option>
+      </select>
+
+      <br><br>
+      <label>Hours per day:</label>
+      <input type="number" id="dailyHours" value="2" min="1">
+
+
+      <div class="result">
+        <p>Total Videos: <span id="videos">-</span></p>
+        <p>Total Duration: <span id="time">-</span></p>
+        <p>Adjusted Time: <span id="speedTime">-</span></p>
+        <p>Days Required: <span id="days">-</span></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
