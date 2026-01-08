@@ -1,4 +1,4 @@
-const API_KEY = "AIzaSyAzwBmvgFT_OdDIE7D7R_okhq1u9gl_e1Q";
+const API_KEY = "AIzaSyD8DiPGitId3LM-lAkSYGMxVx247z9uGWo";
 
 function getPlaylistId(url) {
   let params = new URL(url).searchParams;
