@@ -4,7 +4,7 @@ A web application that calculates the total number of videos and total watch tim
 It also estimates adjusted watch time based on playback speed and the number of days required to complete the playlist.
 
 ## Live Demo
-https://ashipa-creek.github.io/youtube-playlist-calculator
+https://ashipa-creek.github.io/youtube-playlist-calculator/
 
 ## Features
 - Calculates total videos and playlist duration
