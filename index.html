@@ -5,12 +5,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--Parent container for all the container with className="container" for applying styles in css properties.-->
     <div class="container">
-      <h2>YouTube Playlist Time Calculator</h2>
 
+      <h2>YouTube Playlist Time Calculator</h2>
+      <!--PlayList URL-->
       <input type="text" id="playlistUrl" placeholder="Paste playlist URL" />
+      <!--onClick on button calls calculate() in js file-->
       <button onclick="calculate()">Calculate</button>
+
       <label>Playback Speed:</label>
+      <!--Used for Selecting Speed //Interactivity is yet to be added using JS, therefore we have to click on Calculate button for calling calculate() with the specified value in this section.-->
       <select id="speed">
         <option value="1">1x (Normal)</option>
         <option value="1.25">1.25x</option>
@@ -20,10 +25,11 @@
 
       <br><br>
       <label>Hours per day:</label>
+      <!--Used for selecting hours per day constraint//Interactivity is yet to be added using JS, therefore we have to click on Calculate button for calling calculate() with the specified value in this section.--> 
       <input type="number" id="dailyHours" value="2" min="1">
 
-
       <div class="result">
+        <!--This is the result section after calculate() is called. Using <P> for labelling the result. Using span which is later modified using Js.-->
         <p>Total Videos: <span id="videos">-</span></p>
         <p>Total Duration: <span id="time">-</span></p>
         <p>Adjusted Time: <span id="speedTime">-</span></p>
