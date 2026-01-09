@@ -27,3 +27,35 @@ button {
   margin-top: 20px;
   font-weight: bold;
 }
+
+/* Dark mode styles */
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark .container {
+  background: #1e1e1e;
+}
+
+body.dark input,body.dark select {
+  background: #2c2c2c;
+  color: #ffffff;
+  border: 1px solid #444;
+}
+
+body.dark button {
+  background: #3f51b5;
+  color: white;
+}
+
+body.dark .result {
+  color: #81c784;
+}
+
+/* Theme toggle button */
+#themeToggle {
+  margin-bottom: 10px;
+  background: #444;
+  color: white;
+}

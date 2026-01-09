@@ -80,3 +80,12 @@ function formatTime(sec) {
   return `${h} hour${h !== 1 ? "s" : ""} ${m} minute${m !== 1 ? "s" : ""}`;
 }
 
+
+function toggleTheme() {
+  document.body.classList.toggle("dark");
+
+  const btn = document.getElementById("themeToggle");
+  btn.textContent = document.body.classList.contains("dark")
+    ? "☀️ Light Mode"
+    : "🌙 Dark Mode";
+}
