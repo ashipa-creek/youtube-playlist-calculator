@@ -79,3 +79,4 @@ function formatTime(sec) {
   let m = Math.floor((sec % 3600) / 60);
   return `${h} hour${h !== 1 ? "s" : ""} ${m} minute${m !== 1 ? "s" : ""}`;
 }
+
